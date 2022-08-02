@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Interactive.Character_Movement.Keyboard.Scripts.Movement
+namespace Interactive.Character_Movement.Keyboard.Scripts.Movement.Base
 {
     /// <summary>
     /// 鼠标控制角色移动
     /// </summary>
+    [RequireComponent(typeof(NavMeshAgent))]
     public class MouseMovement : MonoBehaviour
     {
         [SerializeField] private Transform mTransform;
